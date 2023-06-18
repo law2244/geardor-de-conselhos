@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+body{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    font-family: Manrope
+    
+}
+.conteiner{
+    background-color: hsl(217, 19%, 24%) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    border-radius: 10px;
+}
+.conteiner h6{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 5px ;
+    font-weight: 100;
+    margin-bottom: 0 ;
+    padding-top: 5px
+}
+.conteiner p{
+    color: hsl(193, 38%, 86%) ;
+    font-size: 24px;
+    max-width: 350px
+} 
+[src="assets/images/pattern-divider-desktop.svg"]{
+    padding-top: 5px;
+}
+[src="assets/images/icon-dice.svg"]{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    background-color: hsl(150, 100%, 66%) ;
+    padding: 15px ;
+    clip-path: circle();
+}
+[src="assets/images/pattern-divider-mobile.svg"]{
+    display: none;
+}
+@media (min-width: 100px) and (max-width:550px){
+        .conteiner{
+            padding: 0 10px;
+        } 
+        .conteiner p{
+            max-width: 200px
+        } 
+        [src="assets/images/pattern-divider-desktop.svg" ]{
+            display: none;
+        }
+        [src="assets/images/pattern-divider-mobile.svg"]{
+            padding-top: 5px;
+            display: block;
+        }
+   
+}
+
